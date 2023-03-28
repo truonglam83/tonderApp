@@ -1,0 +1,24 @@
+@import "../../styles/variables/variables";
+.chat__wrapper {
+  padding: 0 16px;
+  .chat__title {
+    font-weight: 700;
+    font-size: $fs-title-3;
+    line-height: $lh-4;
+    color: $main-text-color;
+    padding: 0.688rem 0;
+    margin-bottom: 0;
+  }
+  .chatbox__title,
+  .favorite__title {
+    font-weight: 700;
+    font-size: $fs-body-2;
+    line-height: $lh-2;
+    margin-top: 8px !important;
+    margin-bottom: 16px;
+  }
+  .chatbox__title {
+    margin-top: 28px !important;
+    margin-bottom: 0;
+  }
+}

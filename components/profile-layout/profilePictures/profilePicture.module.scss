@@ -1,0 +1,170 @@
+.profile__picture {
+    padding-top: 2rem;
+
+    :global {
+        .ant-image {
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    img {
+        width: 100%;
+        height: 100%;
+        border-radius: 0.75rem;
+    }
+    .picture__add {
+        opacity: 0.5;
+        width: 100%;
+        height: 100%;
+        border: 3px dotted #333;
+        border-radius: 0.75rem;
+
+        .overlay {
+            top: 0;
+            border-radius: 1rem;
+            width: 100%;
+            height: 100%;
+            min-height: 6.5rem;
+
+            .add-file {
+                position: relative;
+                display: inline-block;
+            }
+
+            .more--icon {
+                position: absolute;
+                z-index: 2;
+                color: white;
+                font-size: 1.5rem;
+                top: 30%;
+                left: 37.5%;
+            }
+
+            .add--icon {
+                position: absolute;
+                z-index: 2;
+                font-size: 48px;
+                top: 20%;
+                left: 37.5%;
+            }
+
+            .add-icon i {
+                cursor: pointer;
+            }
+        }
+    }
+
+    .add__picture {
+        background-color: red;
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.image--container {
+    position: relative;
+
+    .overlay {
+        top: 0;
+        border-radius: 1rem;
+        width: 100%;
+        height: 100%;
+
+        .add-file {
+            position: relative;
+            display: inline-block;
+        }
+
+        .more--icon {
+            position: absolute;
+            z-index: 2;
+            color: white;
+            font-size: 1.5rem;
+            top: 30%;
+            left: 37.5%;
+        }
+
+        .add--icon {
+            position: absolute;
+            z-index: 2;
+            color: white;
+            font-size: 48px;
+            top: 15%;
+            left: 37.5%;
+        }
+
+        .add-icon i {
+            cursor: pointer;
+        }
+    }
+}
+
+.photo-gallery {
+    &__actions {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 2;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        & > button {
+            background: transparent;
+            color: #fff;
+            font-size: 16px;
+            padding: 10px 20px;
+            margin: 0 10px;
+            border: 1px solid #fff;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            display: none;
+
+            &:hover {
+                background: #fff;
+                color: #000;
+            }
+        }
+    }
+
+    &__photo {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+
+        &:hover {
+            &::before {
+                content: "";
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+
+                background-color: rgba(0, 0, 0, 0.5);
+                z-index: 1;
+            }
+            button {
+                background: transparent;
+                color: #fff;
+                font-size: 16px;
+                padding: 10px 20px;
+                margin: 0 10px;
+                border: 1px solid #fff;
+                border-radius: 4px;
+                cursor: pointer;
+                transition: all 0.3s ease;
+                display: block;
+
+                &:hover {
+                    background: #fff;
+                    color: #000;
+                }
+            }
+        }
+    }
+}

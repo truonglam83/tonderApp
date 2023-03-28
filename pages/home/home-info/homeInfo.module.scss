@@ -1,0 +1,91 @@
+@import "../../../styles/variables/variables";
+.home__drawer {
+  position: relative;
+  :global {
+    .ant-drawer .ant-drawer-body {
+      padding: 0rem;
+    }
+  }
+}
+.home__info {
+  .buttonBack {
+    float: right;
+    position: absolute;
+    top: -1.2rem;
+    right: 2rem;
+    z-index: 2;
+    button {
+      background-color: transparent;
+      border: none;
+    }
+  }
+  .info__image {
+    text-align: center;
+    .image__main {
+      border-radius: 1.25rem;
+    }
+  }
+  .info__bio {
+    padding: 0.3rem;
+    .bio__name {
+      font-size: $fs-title-3;
+      font-weight: $fw-7;
+      line-height: 2rem;
+    }
+    .bio__distance {
+      padding: 0.3rem 0 1rem;
+      img {
+        width: auto;
+        padding: 0 0.6rem 0 0;
+      }
+    }
+    .bio__desc {
+      background-color: $color-neutral-10;
+      padding: 1rem 0.5rem;
+      border-radius: 0.8rem;
+      font-size: $fs-caption;
+      line-height: 1.3rem;
+    }
+    .bio__fav {
+      padding: 1.5rem 0;
+      .fav__title {
+        margin-bottom: 1rem;
+        color: $color-neutral-65;
+      }
+      .fav__wrapper {
+        margin: 1rem;
+      }
+      .fav__detail {
+        background-color: $color-neutral-10;
+        display: inline-block;
+        padding: 0.5rem 1rem;
+        margin: 0.3rem 0.5rem;
+        border-radius: 1rem;
+        span {
+          margin-left: 0.5rem;
+          font-weight: $fw-5;
+        }
+      }
+    }
+    .bio__tags {
+      .tags__title {
+        margin-bottom: 1rem;
+        color: $color-neutral-65;
+      }
+
+      .tags__detail {
+        display: inline-block;
+        padding: 0.5rem 1rem;
+        margin: 0.3rem 0.5rem;
+        border-radius: 1rem;
+      }
+    }
+  }
+  .info__photos {
+    margin: 3rem 0 5rem;
+    img {
+      height: 30rem;
+      width: 100%;
+    }
+  }
+}

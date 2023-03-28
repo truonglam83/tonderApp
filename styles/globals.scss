@@ -1,0 +1,43 @@
+@import "./variables/variables";
+@import "antd/dist/reset.css";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  position: relative;
+  // height: 900px;
+}
+
+body {
+  background-color: $color-neutral-white;
+  height: auto;
+}
+
+.container {
+  padding: 1rem;
+}
+
+p {
+  margin: 0rem;
+}
+
+.button__custom--center {
+  justify-content: center;
+}
+
+.button__custom--sb {
+  justify-content: space-between;
+  margin: 0;
+}
+
+.ant-image .ant-image-mask {
+  border-radius: 1rem;
+}
+
+.ant-image .ant-image-mask .ant-image-mask-info {
+  visibility: hidden;
+}

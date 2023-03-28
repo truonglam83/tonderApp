@@ -1,0 +1,38 @@
+@import "../../../../styles/variables/variables";
+.form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 0.5rem;
+  margin-top: 1rem;
+
+  &__item {
+    display: flex;
+    justify-content: space-between;
+
+    font-size: $fs-body-3;
+
+    &--property {
+      display: flex;
+      align-items: center;
+
+      gap: 1rem;
+
+      font-weight: $fw-5;
+      line-height: $lh-1;
+    }
+
+    &--value {
+      color: $color-neutral-40;
+    }
+
+    &--detail {
+      height: 0.75rem;
+    }
+  }
+  :global {
+    .ant-select .ant-select-arrow {
+      inset-inline-end: 0;
+    }
+  }
+}

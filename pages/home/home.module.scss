@@ -1,0 +1,70 @@
+@import "../../styles/variables/variables";
+
+.home {
+  height: 80vh;
+
+  :global {
+    .slick-slider {
+      .slick-list {
+        border-radius: 1.25rem;
+        img {
+          border-radius: 1.25rem;
+          width: 100%;
+        }
+        .ant-btn {
+          background-color: $color-neutral-white;
+          width: 2rem;
+          height: 2em;
+          border-radius: 0.5rem;
+        }
+        .slick-track {
+          display: flex;
+          align-items: center;
+        }
+      }
+    }
+    .ant-btn {
+      height: 3.375rem;
+      width: 3.375rem;
+    }
+  }
+  .content {
+    position: relative;
+    text-align: center;
+    .info--user {
+      position: absolute;
+      width: 100%;
+      bottom: 20%;
+      text-align: left;
+      .info--detail {
+        padding: 0 1rem;
+        .info__distance {
+          display: flex;
+          align-items: center;
+          border-radius: 1.563rem;
+          padding: 0.25rem 0.5rem;
+          background-color: $color-neutral-white;
+          font-size: $fs-caption;
+          width: 8rem;
+          img {
+            width: auto;
+            padding: 0 0.6rem 0 0;
+          }
+        }
+      }
+      p {
+        font-weight: $fw-7;
+        font-size: $fs-title-3;
+        color: $color-neutral-white;
+      }
+    }
+  }
+
+  .buttons {
+    display: flex;
+    justify-content: space-around;
+    position: absolute;
+    bottom: 15vh;
+    width: 92%;
+  }
+}

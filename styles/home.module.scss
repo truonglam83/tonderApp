@@ -1,0 +1,58 @@
+@import "./variables/variables";
+
+.welcome {
+  .welcome__body {
+    .body__title {
+      font-size: $fs-title-2;
+      color: #7a56fe;
+      font-weight: $fw-8;
+      padding-bottom: 1rem;
+    }
+    .body__text {
+      font-size: $fs-title-3;
+      font-weight: $fw-7;
+      color: #22313f;
+      padding-bottom: 1rem;
+    }
+    .body__description {
+      font-size: $fs-body-2;
+      line-height: $lh-2;
+      color: #a7adb2;
+      padding-right: 2rem;
+    }
+    .body__button {
+      width: 100%;
+      margin: 1rem 0 2rem;
+      padding: 1rem 3.1rem;
+      border: none;
+      border-radius: 1rem;
+      background-color: #22313f;
+      color: $color-neutral-white;
+      font-weight: $fw-7;
+    }
+
+    img {
+      padding: 1.125rem 0 2rem;
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  .welcome__footer {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    .footer__text {
+      font-size: 0.75rem;
+      color: #a7adb2;
+      padding-bottom: 0.6rem;
+    }
+
+    .footer__social {
+      img {
+        margin: 0 0.7rem;
+      }
+    }
+  }
+}

@@ -1,0 +1,31 @@
+@import "../../../..//styles/variables/variables";
+.list__chat {
+  :global {
+    .ant-list-item .ant-list-item-meta {
+      align-items: center;
+    }
+    .ant-list-item {
+      padding: 16px 0;
+      border: none;
+    }
+  }
+
+  .avatar {
+    border-radius: 16px;
+    width: 48px;
+    height: 48px;
+  }
+  .name {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    color: $main-text-color !important;
+  }
+  .time,
+  .message {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    color: $color-neutral-40;
+  }
+}
